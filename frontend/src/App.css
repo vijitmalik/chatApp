@@ -1,0 +1,142 @@
+.app {
+  height: 100vh;
+  font-weight: 700;
+}
+
+.app-header {
+  background-color: #d89157;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: calc(10px + 2vmin);
+  color: whitesmoke;
+  height: 10%;
+}
+
+.app-header>div {
+  width: 70%;
+}
+
+.app-body {
+  height: 90%;
+  overflow-y: hidden;
+  padding: 0 20px 0 20px;
+  background-color: #e7d6c8;
+}
+
+.records-section {
+  margin: 40px 20px 20px 20px;
+}
+
+.records-header {
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  margin-bottom: 0px;
+}
+
+.record {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px 20px 10px 20px;
+  border-bottom: 1px solid gray;
+}
+
+.record div {
+  flex: 1;
+  margin: 10px;
+}
+
+.records-body {
+  overflow-y: scroll;
+  scrollbar-width: thin;
+}
+
+.record button{
+  margin-left: 10px;
+}
+
+input,
+textarea {
+  height: 30px;
+  border-color: black;
+  border-radius: 5px;
+}
+
+button {
+  display: inline-block;
+  height: 30px;
+  border-radius: 5px;
+}
+
+.layover {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.9;
+  z-index: 10;
+}
+
+.form-modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 20;
+  background-color: rgb(95, 115, 136) !important;
+  color: whitesmoke;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.field-group {
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.error{
+  margin-left: auto;
+  font-size: small;
+  color: rgb(109, 32, 32);
+  margin-left: 50%;
+}
+
+.field-group label {
+  min-width: 50%;
+}
+
+modal-header {
+  margin: 10px;
+  max-height: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+modal-header h2{
+  margin:0px;
+}
+
+form {
+  margin: 20px;
+}
+
+modal-footer {
+  display: flex;
+  justify-content: end;
+}
+
+modal-footer button {
+  margin-left: 10px;
+}
+
+.submitFormButton {
+  background-color: rgb(101, 168, 101);
+  color: whitesmoke;
+}
+
+.deleteFormButton {
+  background-color: rgb(192, 65, 65);
+  color: whitesmoke;
+}
